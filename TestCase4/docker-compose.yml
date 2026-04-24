@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  nodejs-api:
+    build:
+      context: ..
+      dockerfile: TestCase4/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
