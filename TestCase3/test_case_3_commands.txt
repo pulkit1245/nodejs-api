@@ -1,0 +1,32 @@
+Test Case 3 Commands
+
+1. Initialize Node.js Project
+   - npm init -y
+   - npm install express
+
+2. Create Express Server
+   - Create index.js with basic Express setup
+   - Define health check endpoint at /health
+   - Start server on port 3000
+
+3. Test Health Check Endpoint
+   - curl http://localhost:3000/health
+   - Expected Response: {"status": "ok"}
+
+4. Git Operations
+   - git init
+   - git add .
+   - git commit -m "Initial setup of Express server with a basic health check endpoint"
+   - git remote add origin https://github.com/pulkit1245/nodejs-api.git
+   - git branch -M main
+   - git push -u origin main
+
+5. SSH Authentication Setup
+   - ssh-keygen -t ed25519 -C "email@github.com"
+   - Add public key to GitHub settings
+   - ssh-add ~/.ssh/id_ed25519
+   - git remote set-url origin git@github.com:pulkit1245/nodejs-api.git
+
+6. Verification
+   - Verify code is pushed to GitHub repository
+   - Check repository at https://github.com/pulkit1245/nodejs-api
