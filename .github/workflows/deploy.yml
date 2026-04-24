@@ -27,8 +27,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        cd TestCase4
-        docker build -t nodejs-api .
+        docker build -t nodejs-api -f TestCase4/Dockerfile .
 
     - name: Deploy application
       run: echo "Deploying application to server..."
